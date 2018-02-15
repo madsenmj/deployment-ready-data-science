@@ -1,0 +1,17 @@
+name: tensorflow
+dependencies:
+  - python=3.5.2
+  # Required for Jupyter Notebooks.
+  - jupyter
+
+  - pip:
+    # The API for Azure Machine Learning Model Management Service.
+    # Details: https://github.com/Azure/Machine-Learning-Operationalization
+    - sklearn
+    - matplotlib
+    - keras-tqdm
+    - numpy==1.13.1
+    - keras==2.0.8
+    - tensorflow-gpu==1.4.0
+    - h5py==2.7.1
+    - pandas==0.20.3
