@@ -13,3 +13,6 @@ dependencies:
     - tensorflow-gpu==1.4.0
     - h5py==2.7.1
     - pandas==0.20.3
+    - pyodbc
+    - sqlalchemy
+    - dvc
