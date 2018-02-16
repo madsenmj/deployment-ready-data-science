@@ -5,8 +5,6 @@ dependencies:
   - jupyter
 
   - pip:
-    # The API for Azure Machine Learning Model Management Service.
-    # Details: https://github.com/Azure/Machine-Learning-Operationalization
     - sklearn
     - matplotlib
     - keras-tqdm
