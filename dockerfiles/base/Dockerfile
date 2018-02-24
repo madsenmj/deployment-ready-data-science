@@ -1,6 +1,4 @@
-FROM ubuntu:16.04
-
-MAINTAINER Martin Madsen <madsen.mj@gmail.com> 
+FROM nvidia/cuda:8.0-cudnn5-devel
 
 RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
     curl build-essential libpng12-dev libffi-dev \
@@ -20,13 +18,7 @@ EXPOSE 8888 6006
 VOLUME /code
 WORKDIR "/code"
 
-#CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
-CMD ["/bin/bash"]
+CMD [""]
 
-ADD environment.yml /environment.yml
-RUN conda env create -f /environment.yml
 
-ENV CONDA_ENV tensorflow
 
-# Run app.py when the container launches
-# CMD ["python", "app.py"]
