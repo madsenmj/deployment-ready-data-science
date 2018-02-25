@@ -12,7 +12,6 @@ RUN curl -sSL -o installer.sh https://repo.continuum.io/archive/Anaconda3-5.1.0-
     rm /installer.sh
 
 ENV PATH "$PATH:/root/anaconda3/bin"
-ADD startup /startup
 
 EXPOSE 8888 6006
 VOLUME /code
